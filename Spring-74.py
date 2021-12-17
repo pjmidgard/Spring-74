@@ -296,7 +296,7 @@ class compression:
                                     T5=-1
                                    
                                    
-                                    if sda3[0:8]="00000000":
+                                    if sda3[0:8]=="00000000":
                                     	raise SystemExit
                                     	
                                    
