@@ -570,7 +570,7 @@ class compression:
 	                                    	T3=T7
 	                                    	T4=0
 	                                    	
-	                                    	if T3==500:
+	                                    	if T3==1:
 	                                    		T7=255
 	                                    	
 	                                    	
