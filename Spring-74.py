@@ -348,10 +348,12 @@ class compression:
 	                                    if T3==0 or T3==1:
 	                                    	
 	                                    	T8=T4
+	                                    	
+	                                    
 	                                    
 	                                    	
 	                                    	T7=T7+1
-	                                    	if T7==500:
+	                                    	if T3==1:
 	                                    		T7=255
 	                                    	
 	                                    
@@ -521,6 +523,8 @@ class compression:
                                     T8=0
                                     T6=T4
                                     
+                                    
+                                    
                                     T9=T4
                                     
                                     T3=1
@@ -566,7 +570,7 @@ class compression:
 	                                    	T3=T7
 	                                    	T4=0
 	                                    	
-	                                    	if T7==500:
+	                                    	if T3==500:
 	                                    		T7=255
 	                                    	
 	                                    	
