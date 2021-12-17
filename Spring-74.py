@@ -579,19 +579,7 @@ class compression:
 	                                    if T6==T8:
 	                                    	T12=T12+1
 	                                    	T21=T7
-	                                    
-	                                  
-	                                 
-              
-                                    
-                                   
-                                    
-                                    
-                                  
-                                    
-                                    
-                                    
-                                          
+	
                                     sda6=sda4
                                     sda4=""
                                       
