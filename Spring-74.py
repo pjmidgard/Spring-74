@@ -305,6 +305,7 @@ class compression:
                                     T1= int(sda10, 2)
                                    
                                     T10=T1
+                                    print(T1)
                    
 	                                    	
 	                                    	
@@ -312,20 +313,21 @@ class compression:
 	                                  
 	                               
                                     T7=1
-                                    T1=1
+                                   
                                     T8=0
-                                    T6=T4
+                                    T6=T1
                                     
                                     T9=T4
                                     
                                     T3=1
                                     T4=0
+                                   
                                     T5=0
                                     T12=0
                                     T21=0
                                     T10=T10+1
                                     
-                                    while T4!=T10:
+                                    while T6!=T8:
 	                                    T2=T1%2
 	                                    T3=T1
 	                                    
@@ -343,12 +345,15 @@ class compression:
 	                                    	T4=T4+1
 
 	                                    	
-	                                    if T3==0:
+	                                    if T3==0 or T3==1:
 	                                    	
 	                                    	T8=T4
 	                                    
 	                                    	
 	                                    	T7=T7+1
+	                                    	if T7==500:
+	                                    		T7=255
+	                                    	
 	                                    
 	                                    	
 	                                    	T1=T7
@@ -362,8 +367,12 @@ class compression:
 	                                  
 	                                 
 
-                                    
+                                   
                                     T7=T7-1
+                                    
+                                    
+                                    
+                                    
                                     
                                     sda17=bin(T7)[2:]
                                     	
@@ -473,7 +482,7 @@ class compression:
                                    
                                     T10=T1
                                     T12=0
-                                    while T5!=0:
+                                    while T3!=0:
 	                                    T2=T1%2
 	                                    T3=T1
 	                                    
@@ -481,6 +490,7 @@ class compression:
 	                                        T3=T3-3
 	                                        T1=T3
 	                                        T4=T4+1
+	                                        
 	                                        
 	                                        
 	                                       
@@ -494,9 +504,11 @@ class compression:
 	                                    	
 	                                    	
 	                                    	
+	                                    	
 	                                    
 	                                    	
-	                                    if T3==0:
+	                                    if T3==0 or T3==1:
+	                                    	T3=0
 	                                    	T4=T4
 	                                    	T5=T3
 	                                    	
@@ -537,17 +549,26 @@ class compression:
 	                                    	T4=T4+1
 
 	                                    	
-	                                    if T3==0:
+	                                    if T3==0 or T3==1:
+	                                    	
 	                                    	
 	                                    	T8=T4
-	                                    
+	                                        
+	                                        	
+	                                        	
 	                                    	
 	                                    	T7=T7+1
+	                                    	
+	                                    	
 	                                    
 	                                    	
 	                                    	T1=T7
 	                                    	T3=T7
-	                                    	T4=0	
+	                                    	T4=0
+	                                    	
+	                                    	if T7==500:
+	                                    		T7=255
+	                                    	
 	                                    	
 	                                    if T6==T8:
 	                                    	T12=T12+1
@@ -555,9 +576,10 @@ class compression:
 	                                    
 	                                  
 	                                 
-
+              
                                     
                                    
+                                    
                                     
                                   
                                     
